@@ -174,8 +174,13 @@ button:hover{
     margin: 10px 0;
 }
 
+.btnsProfileCat{
+    margin-top: 10px;
+}
+
 .btnsProfileCat button{
     font-size: 17px;
+    margin: 0 5px;
 }
 
 /* Добавление нового котика */
