@@ -1,0 +1,275 @@
+/* Общее */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid rgb(26, 25, 25);
+    background: white;
+    color: rgb(26, 25, 25);
+}
+
+button:hover{
+    color: wheat;
+    border: 1px solid wheat;
+}
+
+.container{
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    background: rgba(228, 228, 228, 0.376);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.btnAddCat{
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* Все котики */
+.cats{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.img {
+    height: 100%;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.imgItem{
+    width: 100%;
+    position: relative;
+    height: 200px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.goToCard{
+    width: 100%;
+    background: rgba(255, 0, 0, 0.096);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cat{
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+
+.btnEstimate{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.btnEstimate button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.voiceCounted{
+    width: 100%;
+    height: 50px;
+    background: rgba(128, 128, 128, 0.644);
+    display: flex;
+    top: -50px;
+    transition: 1.3s;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Профиль котика */
+.profileCatContainer{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.466);
+    z-index: 2;
+}
+
+.profileCat{
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 500px;
+    width: 1000px;
+    padding: 10px;
+    position: relative;
+}
+
+.profileCat .imgCat{
+    flex-basis: 40%;
+}
+
+.profileCat .specific{
+    flex-basis: 60%;
+}
+
+.profileCat .imgCat img{
+    width: 100%;
+}
+
+.obj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.btnClose{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.profileCat .specific{
+    font-size: 20px;
+}
+
+.profileCat .specific div{
+    margin: 10px 0;
+}
+
+.btnsProfileCat button{
+    font-size: 17px;
+}
+
+/* Добавление нового котика */
+.addCat{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    top: -200px;
+}
+
+.addCatInner{
+    margin: 0 auto;
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.addCatInner div{
+    margin: 10px 0;
+}
+
+.addCatInner div input{
+    width: 100%;
+}
+
+.btnCloseAdd{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+/* Изменение котика */
+.changeCat{
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    top: -200px;
+    transition: .5;
+    z-index: 3;
+}
+
+.changeCatInner{
+    margin: 0 auto;
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px 30px;
+    position: relative;
+    background: lightgrey;
+}
+
+.changeCatInner div{
+    margin: 10px 0;
+}
+
+.changeCatInner div input{
+    width: 100%;
+}
+
+.btnCloseChnage{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+/* Удаление котика */
+.confirm{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    display: none;
+    background: grey;
+    padding: 25px 20px;
+    border-radius: 10px;
+    top: 200px;
+    left: 400px
+}
+
+.btnsConfirm{
+    margin-top: 10px;
+}
+
+.btnsConfirm button{
+    font-size: 16px;
+}

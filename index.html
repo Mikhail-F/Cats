@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Добавть нового котика -->
+        <header class="header">
+            <button class="btnAddCat">Добавить нового котика</button>
+        </header>
+
+        <!-- Все котики -->
+        <div class="cats"></div>
+    </div>
+
+    <!-- Профиль котика -->
+    <div class="profileCatContainer"></div>
+
+    <!-- Добавть котика -->
+    <div class="addCat">
+        <div class="addCatInner">
+            <div>Добавть котика:</div>
+            <div><input class="addName" type="text" placeholder="Введите имя"></div>
+            <div><input class="addDescription" type="text" placeholder="Введите описание"></div>
+            <div><input class="addUrl" type="text" placeholder="Вставьте url фотографии"></div>
+            <div><button class="btnAddCatSave" disabled>Сохранить</button></div>
+            <div><button class="btnCloseAdd">X</button></div>
+        </div>
+    </div>
+
+    <!-- Изменить котика -->
+    <div class="changeCat">
+        <div class="changeCatInner">
+            <div>Изменить данные котика:</div>
+            <div><input class="changeName" type="text" placeholder="Измените имя"></div>
+            <div><input class="changeDescription" type="text" placeholder="Измените описание"></div>
+            <div><input class="changeUrl" type="text" placeholder="Измените url фотографии"></div>
+            <div><button class="btnChangeCatSave" disabled>Сохранить</button></div>
+            <div><button class="btnCloseChnage">X</button></div>
+        </div>
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/server.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
